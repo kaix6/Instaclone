@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 5px groove rgba(0, 0, 0, 0.18);
+}
+
+.navbar img {
+  height: 30px;
+  width: 30px;
+  color: black;
+  object-fit: cover;
+}
+
+.navbar {
+  margin-right: 70px;
+}
+
+.postcontainer {
+  margin-top: 80px;
+  margin-left: 160px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 160px;
+}
+
+.postcomplete {
+  border: 1px solid black;
+  width: 700px;
+}
+
+.postheader {
+  margin: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.postbar {
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.likes {
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+  width: 100px;
+}
+
+.caption {
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.comments {
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.inputfield {
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.menu {
+  height: 10px;
+  object-fit: cover;
+}
+
+.menu:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.postprofil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.postprofil img {
+  margin-right: 8px;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 90px;
+}
+
+.postprofil:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.postheader img {
+  margin-right: 8px;
+}
+
+.postbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postbar img {
+  height: 24px;
+  object-fit: cover;
+}
+
+input {
+  height: 24px;
+  width: 80%;
+}
+
+button {
+  width: 20%;
+  height: 30px;
+}
+
+.friendscontainer {
+  border: 1px solid black;
+  width: 400px;
+}
+
+.friendsbox {
+  border: 1px solid black;
+  margin: 8px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  border: 1px solid black;
+  margin: 8px;
+  padding: 8px;
+}
+
+.vorschläge {
+  border: 1px solid black;
+  margin: 8px;
+  padding: 8px;
+}
+
+.opacity-color {
+    color: rgb(174, 168, 168);
+}
+
+.opacity-color:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.margin {
+    margin: 8px;
+}
+
+.linkprofil {
+    font-weight: bold;
+}
+
+.linkprofil:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
