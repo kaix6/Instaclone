@@ -43,20 +43,35 @@ render();
 function createFriendsbox() {
   document.getElementById("friends").innerHTML = `
 <div class="friendscontainer">
-  <div class="friendsbox">
+  <div class="friendsbox-self-profil">
     <div class="postprofil"><img class="profil" src="img/profilepic.jpg" alt="post1"><span>Profilname</span></div> <a href=''>Wechseln</a>
   </div>
-  <div class="vorschläge">Vorschläge für dich, alle ansehenlink</div>
+
+  <div class="vorschläge"><span class="filter">Vorschläge für dich</span><span class="hover">Alle ansehen</span></div>
+
   <div class="friendsbox">
     <div class="postprofil"><img class="profil" src="img/profilepic.jpg" alt="post1"><span>Profilname</span></div> <a href=''>Abonnieren</a>
   </div>
+
   <div class="friendsbox">
     <div class="postprofil"><img class="profil" src="img/profilepic.jpg" alt="post1"><span>Profilname</span></div> <a href=''>Abonnieren</a>
   </div>
+
   <div class="friendsbox">
     <div class="postprofil"><img class="profil" src="img/profilepic.jpg" alt="post1"><span>Profilname</span></div> <a href=''>Abonnieren</a>
   </div>
-  <footer>footersgedöns</footer>
+
+  <footer>
+  <a href'#'>Links</a>
+  <a href"#">Links</a>
+  <a href"#">Links</a>
+  <a href"#">Links</a>
+  <a href"#">Links</a>
+  <a href"#">Links</a>
+  <a href"#">Links</a>
+  <a href"#">Links</a>
+  <a href"#">Links</a>
+  </footer>
 </div>
 `;
 }

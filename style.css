@@ -72,7 +72,6 @@ header {
   opacity: 0.6;
 }
 
-
 .likes {
   margin-top: 8px;
   margin-right: 8px;
@@ -151,35 +150,75 @@ input {
   width: 80%;
 }
 
+.searchfield {
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+
 button {
   width: 20%;
   height: 30px;
 }
 
 .friendscontainer {
-  border: 1px solid black;
   width: 400px;
 }
 
+.friendscontainer a {
+  text-decoration: none;
+  color: rgb(0, 180, 255);
+}
+
+.friendscontainer a:hover {
+  text-decoration: underline;
+}
+
+.hover:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.filter {
+  filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(237deg) brightness(93%)
+    contrast(94%);
+}
 .friendsbox {
-  border: 1px solid black;
-  margin: 8px;
-  padding: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 8px;
+}
+
+.friendsbox-self-profil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.friendsbox-self-profil img {
+  height: 55px;
+  width: 55px;
+}
+
+.friendsbox img {
+  height: 40px;
+  width: 40px;
 }
 
 footer {
-  border: 1px solid black;
-  margin: 8px;
-  padding: 8px;
+  margin-top: 30px;
+  filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(237deg) brightness(93%)
+    contrast(94%);
 }
 
 .vorschläge {
-  border: 1px solid black;
-  margin: 8px;
-  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 16px;
 }
 
 .opacity-color {
