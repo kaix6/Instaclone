@@ -19,8 +19,8 @@ function createpost() {
         <div class="image"><img src="img/post1.jpg" alt="post1"></div>
 
         <div class="postbar">
-          <div class="icons"> <img src="img/heart.png" alt="like"> <img src="img/heart.png" alt="comment"> 
-            <img src="img/airplane.png" alt="teilen"> </div> <img src="img/heart.png" alt="speichern">
+          <div class="icons"> <img src="img/hearticon.svg" alt="like"> <img src="img/chat.svg" alt="comment"> 
+            <img src="img/send-fill.svg" alt="teilen"> </div> <img src="img/bookmark-fill.svg" alt="speichern">
         </div>
 
         <div class="likes">Gefällt: ...</div>

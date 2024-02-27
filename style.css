@@ -13,8 +13,14 @@ header {
 .navbar img {
   height: 30px;
   width: 30px;
-  color: black;
   object-fit: cover;
+  margin-right: 10px;
+  filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(237deg) brightness(93%)
+    contrast(94%);
+}
+
+.navbar img:hover {
+  opacity: 0.6;
 }
 
 .navbar {
@@ -52,6 +58,20 @@ header {
   margin-right: 8px;
   margin-left: 8px;
 }
+
+.postbar img {
+  filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(237deg) brightness(93%)
+    contrast(94%);
+}
+
+.icons img {
+  margin-right: 8px;
+}
+
+.postbar img:hover {
+  opacity: 0.6;
+}
+
 
 .likes {
   margin-top: 8px;
@@ -163,23 +183,23 @@ footer {
 }
 
 .opacity-color {
-    color: rgb(174, 168, 168);
+  color: rgb(174, 168, 168);
 }
 
 .opacity-color:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .margin {
-    margin: 8px;
+  margin: 8px;
 }
 
 .linkprofil {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .linkprofil:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
 }
