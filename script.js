@@ -1,13 +1,30 @@
-function render() {
-  document.getElementById("posts").innerHTML = "";
-  document.getElementById("friends").innerHTML = "";
+let postComplete = [
+  {
+    profilepic: "img/profil1.jpg",
+    profilname: "Heracles",
+    postimage: "img/post1.jpg",
+    caption: "irgendeinText",
+  },
 
-  createpost();
-  createFriendsbox();
-}
+  {
+    profilepic: "img/profil2.jpg",
+    profilname: "Anonymous",
+    postimage: "img/post2.jpg",
+    caption: "irgendeinText",
+  },
+
+  {
+    profilepic: "img/profil3",
+    profilname: "IchBinProfil3",
+    postimage: "img/post3.jpg",
+    caption: "irgendeinText",
+  },
+];
+
+let currentPost = 0;
 
 function createpost() {
-  document.getElementById("posts").innerHTML = `
+  document.getElementById("posts").innerHTML += `
     <div class ="postcomplete">
         <div class="postheader">
           <div class="postprofil">
@@ -38,40 +55,13 @@ function createpost() {
     </div>`;
 }
 
-render();
-
-function createFriendsbox() {
-  document.getElementById("friends").innerHTML = `
-<div class="friendscontainer">
-  <div class="friendsbox-self-profil">
-    <div class="postprofil"><img class="profil" src="img/profilepic.jpg" alt="post1"><span>Profilname</span></div> <a href=''>Wechseln</a>
-  </div>
-
-  <div class="vorschläge"><span class="filter">Vorschläge für dich</span><span class="hover">Alle ansehen</span></div>
-
-  <div class="friendsbox">
-    <div class="postprofil"><img class="profil" src="img/profilepic.jpg" alt="post1"><span>Profilname</span></div> <a href=''>Abonnieren</a>
-  </div>
-
-  <div class="friendsbox">
-    <div class="postprofil"><img class="profil" src="img/profilepic.jpg" alt="post1"><span>Profilname</span></div> <a href=''>Abonnieren</a>
-  </div>
-
-  <div class="friendsbox">
-    <div class="postprofil"><img class="profil" src="img/profilepic.jpg" alt="post1"><span>Profilname</span></div> <a href=''>Abonnieren</a>
-  </div>
-
-  <footer>
-  <a href'#'>Links</a>
-  <a href"#">Links</a>
-  <a href"#">Links</a>
-  <a href"#">Links</a>
-  <a href"#">Links</a>
-  <a href"#">Links</a>
-  <a href"#">Links</a>
-  <a href"#">Links</a>
-  <a href"#">Links</a>
-  </footer>
-</div>
-`;
+function liken() {
+  const button = document.getElementById('btn');
+    if (button.classList.contains("black")) {
+        button.classList.remove("black");
+        button.classList.add("filter-like");
+    } else {
+        button.classList.remove("filter-like");
+        button.classList.add("black");
+    }
 }
