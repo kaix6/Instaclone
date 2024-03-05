@@ -12,7 +12,7 @@
     />
   
   </head>
-  <body>
+  <body onload="createpost()">
     <header>
       <div>
         <img class="logo" src="img/logo.png" alt="logo" />
@@ -44,94 +44,8 @@
 
     <section class="postcontainer">
       <div id="posts" class="structure">
-        <div class="postcomplete">
-          <div class="postheader">
-            <div class="postprofil">
-              <img src="img/profil6.jpg" alt="post1" />
-              <span>Pictures GmbH</span>
-            </div>
-            <img class="menu" src="img/Menudots.png" alt="post1" />
-          </div>
 
-          <div class="image"><img src="img/post1.jpg" alt="post1" /></div>
 
-          <div class="postbar">
-            <div class="icons">
-        <img class="black" id="btn" onclick="liken()" src="img/hearticon.svg" alt="like" />
-              <img src="img/chat.svg" alt="comment" />
-              <img src="img/send-fill.svg" alt="teilen" />
-            </div>
-            <img src="img/bookmark-fill.svg" alt="speichern" />
-          </div>
-
-          <div class="likes">Gefällt: <span id="likes1">95</span></div>
-
-          <div class="caption">
-            <span class="linkprofil">Pictures GmbH: </span>Habe das Bild heute
-            gemalt. Wie findet ihrs? #Kunst #image #pic
-          </div>
-
-          <div class="margin">
-            <span class="opacity-color">Alle (606) Kommentare anzeigen</span>
-          </div>
-
-          <div class="comments">
-            <span class="linkprofil">kennstnicht01: </span>Ein Meisterwerk!!
-            <br />
-            <span class="linkprofil">profil2: </span>Gefällt mir sehr gut!
-          </div>
-
-          <div class="inputfield">
-            <input type="text" placeholder="Kommentar hinzufügen..." /><button>
-              Posten
-            </button>
-          </div>
-        </div>
-
-        <div class="postcomplete">
-          <div class="postheader">
-            <div class="postprofil">
-              <img src="img/profil7.jpg" alt="post1" />
-              <span>Dog 22</span>
-            </div>
-            <img class="menu" src="img/Menudots.png" alt="post1" />
-          </div>
-
-          <div class="image"><img src="img/post2.jpg" alt="post1" /></div>
-
-          <div class="postbar">
-            <div class="icons">
-              <img src="img/hearticon.svg" alt="like" />
-              <img src="img/chat.svg" alt="comment" />
-              <img src="img/send-fill.svg" alt="teilen" />
-            </div>
-            <img src="img/bookmark-fill.svg" alt="speichern" />
-          </div>
-
-          <div class="likes">Gefällt: ...</div>
-
-          <div class="caption">
-            <span class="linkprofil">Dog 22: </span>Ich finde Erdmännchen schon
-            irgendwie süß... #Zoo #Erdmännchen #sweet #cute
-          </div>
-
-          <div class="margin">
-            <span class="opacity-color">Alle (74) Kommentare anzeigen</span>
-          </div>
-
-          <div class="comments">
-            <span class="linkprofil">profil1: </span>Ahh.. die schauen so lustig
-            xD <br />
-            <span class="linkprofil">Dog21: </span>Die habe ich heute auch
-            gesehen. Nette kleine Kerlchen..
-          </div>
-
-          <div class="inputfield">
-            <input type="text" placeholder="Kommentar hinzufügen..." /><button>
-              Posten
-            </button>
-          </div>
-        </div>
       </div>
 
       <div class="friendscontainer">
