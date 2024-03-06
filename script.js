@@ -7,7 +7,7 @@ let caption = [
 ];
 let commentator = ["kennstnicht01", "profil2"];
 let comment = ["Ein Meisterwerk!!", "Ahh.. die schauen so lustig xD"];
-let like = ['95', '150'];
+let like = ["95", "150"];
 
 let currentPost = 0;
 
@@ -66,6 +66,8 @@ function createpost() {
   </div>
 </div>`;
   }
+
+  loadCommentLocalStorage();
 }
 
 function liken() {
@@ -100,35 +102,57 @@ function liken() {
 }
 
 function showNewComment() {
-  const newComment = document.getElementById('addcomment0').value;
+  const newComment = document.getElementById("addcomment0").value;
 
-  if (newComment.trim() !== '') {
+  if (newComment.trim() !== "") {
     // Prüfen Sie, ob der Kommentar nicht leer ist
 
     // Erstellen Sie den HTML-Code für den neuen Kommentar
     const newCommentHTML = `<div><span class="linkprofil">Kai J.: </span>${newComment}</div>`;
 
     // Fügen Sie den neuen Kommentar-HTML-Code zur Kommentarbox hinzu
-    const commentBox0 = document.getElementById('commentbox0');
+    const commentBox0 = document.getElementById("commentbox0");
     commentBox0.innerHTML += newCommentHTML;
 
     // Leeren Sie das Eingabefeld
-    document.getElementById('addcomment0').value = '';
+    document.getElementById("addcomment0").value = "";
+
+    localStorage.setItem("comment", newComment);
   }
 
-  const newComment2 = document.getElementById('addcomment1').value;
+  const newComment2 = document.getElementById("addcomment1").value;
 
-  if (newComment2.trim() !== '') {
+  if (newComment2.trim() !== "") {
     // Prüfen Sie, ob der Kommentar nicht leer ist
 
     // Erstellen Sie den HTML-Code für den neuen Kommentar
     const newComment2HTML = `<div><span class="linkprofil">Kai J.: </span>${newComment2}</div>`;
 
     // Fügen Sie den neuen Kommentar-HTML-Code zur Kommentarbox hinzu
-    const commentBox1 = document.getElementById('commentbox1');
+    const commentBox1 = document.getElementById("commentbox1");
     commentBox1.innerHTML += newComment2HTML;
 
     // Leeren Sie das Eingabefeld
-    document.getElementById('addcomment1').value = '';
+    document.getElementById("addcomment1").value = "";
+
+    localStorage.setItem("comment2", newComment2);
+  }
+}
+
+function loadCommentLocalStorage() {
+  // Laden des ersten Kommentars
+  newComment = localStorage.getItem("comment");
+  if (newComment !== null) {
+    newCommentHTML = `<div><span class="linkprofil">Kai J.: </span>${newComment}</div>`;
+    commentBox0 = document.getElementById("commentbox0");
+    commentBox0.innerHTML += newCommentHTML;
+  }
+
+  // Laden des zweiten Kommentars
+  newComment2 = localStorage.getItem("comment2");
+  if (newComment2 !== null) {
+    newComment2HTML = `<div><span class="linkprofil">Kai J.: </span>${newComment2}</div>`;
+    commentBox1 = document.getElementById("commentbox1");
+    commentBox1.innerHTML += newComment2HTML;
   }
 }
