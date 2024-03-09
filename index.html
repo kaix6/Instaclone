@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   </head>
   <body onload="createpost()">
     <header>
@@ -27,7 +28,7 @@
         <a href="#"> <img class="profilimage none" src="img/profilepic.jpg" /> </a>
       </div>
       <div class="burger">
-        <img class="burger-icon" src="img/list.svg">
+        <img onclick="showOverlay('open')" class="burger-icon" src="img/list.svg">
       </div>
     </header>
 
@@ -115,6 +116,18 @@
           <a href="#">Google Maps</a>
           <a href="#">Kundensupport</a>
         </footer>
+      </div>
+    </section>
+
+    <section id="menu" class="overlay">
+      <div>  <a onclick="showOverlay('close')" href="#"> <img class="iconsNavbar" src="img/x.svg" /> </a></div>
+      <div class="overlay-structure">
+        <a href="#"> <img class="profilimage" src="img/profilepic.jpg" /></a>
+      <a href="#"> <img class="iconsNavbar" src="img/house.svg" /> Home</a>
+      <a href="#"> <img class="iconsNavbar" src="img/send-fill.svg" /> Teilen</a>
+      <a href="#"> <img class="iconsNavbar" src="img/compass.svg" /> Entdecken</a>
+      <a href="#"> <img class="iconsNavbar" src="img/hearticon.svg" /> Likes</a>
+      <a href="#"> <img class="iconsNavbar" src="img/book.svg" /> Freunde</a>
       </div>
     </section>
   </body>

@@ -18,7 +18,12 @@ let postcontainer = document.getElementById("posts");
 
 function renderPosts() {
   for (let i = 0; i < profilname.length; i++) {
-    const postHTML = `
+    htmlCode(i)
+  }
+}
+
+function htmlCode(i){
+  const postHTML = `
       <div class="postcomplete">
         <div class="postheader">
           <div class="postprofil">
@@ -58,8 +63,7 @@ function renderPosts() {
           <button onclick="showNewComment(${i})">Posten</button>
         </div>
       </div>`;
-    document.getElementById("posts").innerHTML += postHTML;
-  }
+      document.getElementById("posts").innerHTML += postHTML;
 }
 
 function liken(postIndex) {
@@ -96,5 +100,15 @@ function loadCommentLocalStorage() {
       const commentBox = document.getElementById(`commentbox${i}`);
       commentBox.innerHTML += newCommentHTML;
     }
+  }
+}
+
+function showOverlay(action) {
+  const menu = document.getElementById('menu');
+
+  if (action === 'open') {
+    menu.classList.add('show-overlay');
+  } else if (action === 'close') {
+    menu.classList.remove('show-overlay');
   }
 }
