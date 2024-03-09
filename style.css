@@ -179,7 +179,7 @@ button {
 
 .friendscontainer {
   width: 400px;
-  padding-left: 30px;
+  padding-left: 60px;
 }
 
 .friendscontainer a {
@@ -272,8 +272,14 @@ footer a {
   object-fit: cover;
 }
 
+.profilimage:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
 .storys {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,3 +300,204 @@ footer a {
 .black {
  color: black;
 }
+
+.burger {
+  display: none;
+}
+
+@media(max-width:1380px) {
+.postprofil {
+  font-size: 14px;
+}
+
+.friendscontainer a {
+  font-size: 14px;
+}
+
+.inputfield {
+  font-size: 14px;
+}
+
+button {
+  font-size: 14px;
+}
+
+.likes {
+  font-size: 15px;
+}
+
+.vorschläge{
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 20px;
+}
+}
+
+@media (max-width: 1360px) {
+  .postcomplete {
+    width: 690px;
+  }
+
+  .image img {
+    width: 684px;
+  }
+
+  .postcontainer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .postcomplete {
+    width: 600px;
+  }
+
+  .image img {
+    width: 594px;
+    height: 550px;
+  }
+
+  .postcontainer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .caption {
+    font-size: 14px;
+  }
+
+  .comments {
+    font-size: 14px;
+  }
+
+  .margin {
+    font-size: 14px;
+  }
+
+  header {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .friendscontainer {
+    display: none;
+  }
+
+  .postcontainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .burger-icon {
+    height: 50px;
+  }
+
+  .burger-icon:hover {
+    cursor: pointer;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .logo {
+    height: 50px;
+    width: 170px;
+  }
+}
+
+@media (max-width:800px) {
+  .none2 {
+    display: none;
+  }
+
+  .postcomplete {
+    width: 500px;
+  }
+
+  .image img {
+    width: 494px;
+    height: 500px;
+  }
+
+  .storys {
+    padding-bottom: 20px;
+  }
+  }
+
+  @media (max-width:600px) {
+  
+    .postcomplete {
+      width: 400px;
+    }
+  
+    .image img {
+      width: 394px;
+      height: 400px;
+    }
+
+    .none3 {
+      display: none;
+    }
+    }
+
+    @media (max-width:470px) {
+  
+      .postcomplete {
+        width: 300px;
+      }
+    
+      .image img {
+        width: 294px;
+        height: 300px;
+      }
+
+      .none4 {
+        display: none;
+      }
+
+      header {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .caption {
+        font-size: 12px;
+      }
+    
+      .comments {
+        font-size: 12px;
+      }
+    
+      .margin {
+        font-size: 12px;
+      }
+
+      .inputfield {
+        font-size: 12px;
+      }
+      
+      button {
+        font-size: 12px;
+      }
+
+      .likes {
+        font-size: 13px;
+      }
+      }
+
+      @media (min-width: 1500px) {
+        .postcontainer {
+          justify-content: center;
+        }
+      }
